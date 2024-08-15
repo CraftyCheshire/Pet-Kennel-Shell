@@ -18,11 +18,17 @@ function createPet(nameInput, speciesInput, energyInput, happinessInput) {
         },
 
         play: function() {
-            console.log(`Thank you for playing with ${this.name}!`)
-            this.energy -= 10
+            console.log(`Thank you for playing with ${this.name}!`);
+            this.energy -= 10;
             if (this.energy < 0) this.energy = 0;
-            this.happiness += 20
+            this.happiness += 20;
             if (this.happiness > 100) this.happiness = 100;
+        },
+
+        nap: function() {
+            console.log(`${this.name} had a paw-some nap.`);
+            this.energy += 40;
+            if (this.energy > 100) this.energy = 100;
         },
     }
     console.log("Created a pet...");
@@ -43,6 +49,32 @@ kennel.push(createPet("Figment", "cat", 20, 10));
 let pet5 = createPet("Rue", "cat", 90, 80);
 kennel[4] = pet5;
 kennel[5] = createPet("Bast", "cat", 100, 70)
-kennel[4].play()
 
 console.table(kennel)
+kennel[0].play()
+kennel[1].play()
+kennel[4].play()
+kennel[2].play()
+kennel[5].play()
+kennel[3].play()
+console.table(kennel)
+kennel[0].feed()
+kennel[1].feed()
+kennel[4].feed()
+kennel[2].feed()
+kennel[5].feed()
+kennel[3].feed()
+console.table(kennel)
+kennel[0].nap()
+kennel[1].nap()
+kennel[4].nap()
+kennel[2].nap()
+kennel[5].nap()
+kennel[3].nap()
+console.table(kennel)
+kennel[0].status()
+kennel[1].status()
+kennel[2].status()
+kennel[3].status()
+kennel[4].status()
+kennel[5].status()
