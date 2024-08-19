@@ -38,7 +38,6 @@ function createPet(nameInput, speciesInput, energyInput, happinessInput) {
 let pet1 = createPet("Sparky", "dog", 50, 40)
 let pet2 = createPet("Shatouliky", "dog", 100, 20)
 let pet3 = createPet("Suzie", "dog", 30, 90)
-
 let dogKennel = [];
 dogKennel.push(pet1);
 dogKennel.push(pet2);
@@ -58,7 +57,6 @@ console.table(dogKennel)
 let pet4 = createPet("Lucifer", "cat", 50, 40)
 let pet5 = createPet("Loki", "cat", 100, 20)
 let pet6 = createPet("Lizard", "cat", 40, 90)
-
 let catKennel = [];
 catKennel.push(pet4);
 catKennel.push(pet5);
@@ -75,15 +73,10 @@ catKennel.forEach(pet => pet.nap());
 console.table(catKennel)
 
 
-
-let pet7 = createPet("Trunks", "fish", 50, 40)
-let pet8 = createPet("Tasha", "fish", 100, 20)
-let pet9 = createPet("Tina", "fish", 40, 90)
-
 let fishTank = [];
-fishTank.push(pet7);
-fishTank.push(pet8);
-fishTank.push(pet9);
+fishTank.push(createPet("Trunks", "fish", 50, 40))
+fishTank.push(createPet("Tasha", "fish", 100, 20))
+fishTank.push(createPet("Tina", "fish", 40, 90))
 fishTank.push(createPet("Terrence", "fish", 50, 10));
 fishTank.push(createPet("Tyrone", "fish", 60, 70));
 fishTank.push(createPet("T-Money", "fish", 70, 60));
