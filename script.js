@@ -51,8 +51,11 @@ function handleSave() {
     petNameInput.value = "";
     zipCodeInput.value = "";
 
-    let user = createFamily(state.firstName, state.petName, state.zipCode);
-    user.status();
+    let user = createPetOwner(state.firstName, state.petName, state.lastName, state.email, state.phoneNumber, state.city, state.zipCode);
+    console.log(user)
+
+
+    // user.status();
     user.render();
 }
 
