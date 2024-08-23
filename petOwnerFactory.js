@@ -32,6 +32,10 @@ function createPetOwner(firstName, petName, lastName, email, phoneNumber, city, 
             let userZipCodeOutput = document.getElementById("userZipCodeOutput");
             console.log(userZipCodeOutput);
             userZipCodeOutput.innerText = this.zipCode;
+        },
+
+        status: function() {
+            console.log(`Welcome, `)
         }
     }
     return petOwner;
