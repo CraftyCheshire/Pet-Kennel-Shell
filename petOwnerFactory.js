@@ -35,7 +35,7 @@ function createPetOwner(firstName, petName, lastName, email, phoneNumber, city, 
         },
 
         status: function() {
-            console.log(`Welcome, `)
+            console.log(`Welcome, ${this.firstName} and ${this.petName} ${this.lastName}! You are from ${this.city}, ${this.zipCode} with a phone number of ${this.phoneNumber}. You will be contacted at ${this.email} for any further information.`)
         }
     }
     return petOwner;
