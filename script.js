@@ -7,6 +7,7 @@ let state = {
     email: "",
     city: "",
 
+    pets: [],
 };
 
 let saveBtn = document.getElementById("saveButton");
@@ -59,4 +60,6 @@ function handleSave() {
     user.render();
 }
 
-saveBtn.addEventListener("click", handleSave);
+if(saveBtn !== null){
+    saveBtn.addEventListener("click", handleSave);
+}
